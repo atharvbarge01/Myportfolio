@@ -5,7 +5,8 @@ import { SkillsSection } from "../components/SkillsSection";
 import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
-import ExtraCaricular from "../components/ExtraCaricular";
+import ExtraCaricular from "../components/ExtraCaricularLightbox";
+import Competitions from "../components/Competitions";
 
 export const Home = () => {
   return (
@@ -21,6 +22,7 @@ export const Home = () => {
         <SkillsSection />
         <ProjectsSection />
         <ExtraCaricular />
+  <Competitions />
         <ContactSection />
       </main>
 

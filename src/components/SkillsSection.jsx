@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import leetcode from "../assets/leetcode.png"
 
 const skills = [
   // Frontend
@@ -17,6 +18,14 @@ const skills = [
   { name: "Git/GitHub", category: "tools" },
   { name: "Canva", category: "tools" },
   { name: "VS Code", category: "tools" },
+];
+const activities = [
+  {  
+    title: "Competitive Coding - 150+ LeetCode Problems",
+    description:
+      "I have consistently honed my problem-solving abilities by solving over 150 challenges on LeetCode. This self-directed practice has significantly strengthened my understanding of core data structures (such as Arrays, Strings, Hash Maps, Trees, and Graphs) and fundamental algorithms (including Sorting, Searching). Through this process, I've developed a strong ability to analyze problems, design efficient solutions, and optimize for both time and space complexity, building a solid foundation for tackling complex engineering tasks.",
+    image:leetcode,
+  },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -75,6 +84,32 @@ export const SkillsSection = () => {
             </div>
           ))}
         </div>
+          <div className="grid grid-cols-1 gap-6 mt-6">
+          {activities.map((activity, idx) => (
+            <div
+              key={idx}
+              className="bg-card p-6 rounded-lg shadow-xs card-hover flex flex-col gap-2"
+            >
+              <h3 className="font-semibold text-lg  mb-2">{activity.title}</h3>
+              <p className="text-muted-foreground text-base mb-2">{activity.description}</p>
+              {/* <img
+                src={activity.image}
+                alt={activity.title + ' certificate'}
+                className="w-full max-w-xs mx-auto rounded-md border border-primary/30 shadow"
+              /> */}
+              <div>
+          <img
+                src={activity.image}
+                alt={activity.title + ' certificate'}
+                className="w-full max-w-xs mx-auto rounded-md border border-primary/30 shadow"
+              />
+
+        </div>
+            </div>
+            
+          ))}
+        </div>
+        
       </div>
     </section>
   );

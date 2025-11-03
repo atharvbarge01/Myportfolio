@@ -30,12 +30,7 @@ const activities = [
       "I completed a 10-day Data Science workshop conducted by 3RI Technologies, which provided a practical introduction to key concepts in data science. During the workshop, I gained hands-on experience with Python programming for data analysis, including data preprocessing, exploratory data analysis (EDA), and visualization using tools like Pandas, NumPy, Matplotlib, and Seaborn. The sessions also covered basic machine learning techniques such as linear regression, decision trees, and clustering. Through real-world case studies and exercises, I developed a better understanding of how to work with data, build simple predictive models, and draw meaningful insights, laying a strong foundation for further learning in data science.",
     image: datascience,
   },
-{  
-  title: "Proficiency in Algorithms & Data Structures (150+ LeetCode Problems)",
-  description:
-    "I have consistently honed my problem-solving abilities by solving over 150 challenges on LeetCode. This self-directed practice has significantly strengthened my understanding of core data structures (such as Arrays, Strings, Hash Maps, Trees, and Graphs) and fundamental algorithms (including Sorting, Searching). Through this process, I've developed a strong ability to analyze problems, design efficient solutions, and optimize for both time and space complexity, building a solid foundation for tackling complex engineering tasks.",
-  image:leetcode,
-},
+
   
 ];
 

@@ -7,7 +7,8 @@ const navItems = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
-  { name: "Extracaricular", href: "#extracaricular" },
+  { name: "Participation", href: "#competitions" },
+  { name: "Certificates", href: "#extracurricular" },
   { name: "Contact", href: "#contact" },
  
 ];
@@ -18,7 +19,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -28,7 +29,7 @@ export const Navbar = () => {
     <nav
       className={cn(
         "fixed w-full z-40 transition-all duration-300",
-        isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+        isScrolled ? "py-3 bg-white/95 backdrop-blur-md shadow-xs" : "py-5 bg-white"
       )}
     >
       <div className="container flex items-center justify-between">
@@ -67,12 +68,12 @@ export const Navbar = () => {
 
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
-            "transition-all duration-300 md:hidden",
-            isMenuOpen
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          )}
+              "fixed inset-0 bg-white/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
+              "transition-all duration-300 md:hidden",
+              isMenuOpen
+                ? "opacity-100 pointer-events-auto"
+                : "opacity-0 pointer-events-none"
+            )}
         >
           <div className="flex flex-col space-y-8 text-xl">
             {navItems.map((item, key) => (

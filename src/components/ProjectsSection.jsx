@@ -1,5 +1,7 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 import amazon from "../assets/amazon.png";
+import medicalchatbot from "../assets/medicalchatbot.png";
+import myai from "../assets/myai.png";
 
 const projects = [
   {
@@ -7,7 +9,7 @@ const projects = [
     title: "MyAI: All-in-One AI Content SaaS Platform",
     description:
       "A full-stack, multi-tenant SaaS application built to serve diverse AI needs from a single dashboard. This platform provides an AI-powered resume analyzer, an image generator for creatives, and a long-form blog/article writer. The stack features a React frontend, a Node.js/Express backend, and Clerk for secure, social, and passwordless user authentication. It uniquely leverages a hybrid database architecture: PostgreSQL manages structured user data and subscriptions, while MongoDB stores the flexible, unstructured AI-generated content (like articles and image prompts).",
-    image:"",
+    image:myai,
     tags: ["React" ,"Node.js", "Express","PostgreSQL" ,"Neon" ,"Clerk","SaaS"],
     githubUrl: "",
   },
@@ -16,7 +18,7 @@ const projects = [
     title: "Medical Chatbot",
     description:
       "An intelligent medical chatbot built with Python and Streamlit, leveraging a Retrieval-Augmented Generation (RAG) pipeline. It uses LangChain and a FAISS vector store to provide accurate, context-aware answers to health questions based on a specialized medical knowledge base, with support for both text and voice responses.",
-    image:"",
+    image: medicalchatbot,
     tags: ["Python" ,"Streamlit", "LangChain", "LLM" ,"RAG" ,"FAISS"],
     githubUrl: "https://github.com/atharvbarge01/Medical_Chatbot.git",
   },
@@ -118,23 +120,35 @@ export const ProjectsSection = () => {
         </div>
 
         <div className="text-center mt-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 mt-6 text-center">
+          {" "}
+         <span className="text-primary"> Profiles</span>
+        </h2>
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/atharvbarge01"
-          >Check My Github  
-            
+          
+          >
+            <Github size={18} />
+            Check my GitHub
           </a>
+          <div className="text-sm text-muted-foreground mt-2"></div>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-6">
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://linkedin.com/in/atharv-barge-33329b289" 
-          >Check My Linkdin Profile 
-            
+            rel="noopener noreferrer"
+            href="https://linkedin.com/in/atharv-barge-33329b289"
+           
+          >
+            <ExternalLink size={18} />
+            Check my LinkedIn
           </a>
+          <div className="text-sm text-muted-foreground mt-2"></div>
         </div>
       </div>
     </section>
