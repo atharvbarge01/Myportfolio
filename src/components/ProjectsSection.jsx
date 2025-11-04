@@ -2,6 +2,7 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 import amazon from "../assets/amazon.png";
 import medicalchatbot from "../assets/medicalchatbot.png";
 import myai from "../assets/myai.png";
+import spotify from "../assets/spotify.png";
 
 const projects = [
   {
@@ -44,7 +45,7 @@ const projects = [
     title: "Spotify Clone",
     description:
       "A front-end project replicating the Spotify music player interface using only HTML and CSS. It features a clean layout with a sidebar, top navigation bar, playlist section, and a fixed music player at the bottom. This project highlights strong knowledge of CSS flexbox, grid, and responsive design, making the clone accessible across desktop and mobile screens.",
-    image: "",
+    image: spotify,
     tags: ["HTML", "CSS"],
     githubUrl: "https://github.com/atharvbarge01/Spotify.git",
   },
