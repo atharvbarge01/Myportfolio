@@ -3,6 +3,7 @@ import amazon from "../assets/amazon.png";
 import medicalchatbot from "../assets/medicalchatbot.png";
 import myai from "../assets/myai.png";
 import spotify from "../assets/spotify.png";
+import zerodha from "../assets/zerodha.avif";
 
 const projects = [
   {
@@ -36,7 +37,7 @@ const projects = [
     id: 4,
     title: "Zerodha",
     description: "A full-stack web application inspired by Zerodha, India’s leading stock trading platform. Built using the MERN stack (MongoDB, Express.js, React, Node.js), it provides functionalities like user authentication, stock market UI, and portfolio management. The project focuses on backend integration with MongoDB for storing user details.",
-    image: "",
+    image: zerodha,
     tags: ["React", "TailwindCSS", "Node.js","Express"],
     githubUrl: "https://github.com/atharvbarge01/Zerodha-Clone.git",
   },

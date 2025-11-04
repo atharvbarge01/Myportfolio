@@ -7,6 +7,8 @@ import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
 import ExtraCaricular from "../components/ExtraCaricularLightbox";
 import Competitions from "../components/Competitions";
+import GoalsSection from "../components/GoalsSection";
+import EducationSection from "../components/EducationSection";
 
 export const Home = () => {
   return (
@@ -18,11 +20,13 @@ export const Home = () => {
       {/* Main Content */}
       <main>
         <HeroSection />
-        <AboutSection />
-        <SkillsSection />
+  <AboutSection />
+  <EducationSection />
+  <SkillsSection />
         <ProjectsSection />
         <ExtraCaricular />
-  <Competitions />
+        <Competitions />
+        <GoalsSection />
         <ContactSection />
       </main>
 

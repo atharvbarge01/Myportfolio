@@ -4,6 +4,7 @@ import greatLearning from "../assets/great-learning.png";
 import CPP from "../assets/CPP.png";
 import datascience from "../assets/3ri certificate.png";
 import genai from "../assets/genai.png";
+import nptel from "../assets/nptel.png";
 
 const activities = [
   {
@@ -35,7 +36,14 @@ const activities = [
   description:
     "Completed the GenAI Powered Data Analytics Job Simulation on July 9th, 2025. Gained hands-on experience in exploratory data analysis, risk profiling, AI-based delinquency prediction, data storytelling, and implementing AI-driven collection strategies.",
   image: genai,
+},
+{
+  title: "NPTEL Online Certification — Enhancing Soft Skills and Personality",
+  description:
+    "Earned an Elite certification from NPTEL, funded by the Ministry of Education, Government of India, and conducted by IIT Kanpur. Successfully completed the 8-week course 'Enhancing Soft Skills and Personality' from Feb to Apr 2024 with a consolidated score of 65%. The course focused on communication, leadership, emotional intelligence, and personal development.",
+  image: nptel,
 }
+
 
 
 ];
